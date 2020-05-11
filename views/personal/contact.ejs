@@ -1,0 +1,92 @@
+<%- include('../partials/header') %>
+
+<div class="layout" id='lay'>
+    <div class="page-content-2">
+        <div class="heading" id="heading">
+            Contacts
+        </div>
+    </div>
+
+    <div class="contact-info">
+        <div class="card">
+            <i class="card-icon fa fa-envelope"></i>
+            <a href="mailto:kaifee000@gmail.com" target="_blank"><p>kaifee000@gmail.com</p></a>
+        </div>
+        <div class="card">
+            <i class="card-icon fa fa-github"></i>
+            <a href="http://www.github.com/Mustafiz04" target="_blank"><p>Mustafiz04</p></a>
+        </div>
+        <div class="card">
+            <i class="card-icon fa fa-instagram"></i>
+            <a href="http://www.instagram.com/codesthaan" target="_blank"><p>codesthaan</p></a>
+        </div>
+        <div class="card">
+            <i class="card-icon fa fa-linkedin"></i>
+            <a href="http://www.linkedin.com/in/mustafiz-kaifee-91b182190" target="_blank"><p>Mustafiz Kaifee</p></a>
+        </div>
+        <div class="card">
+            <i class="card-icon fa fa-phone"></i>
+            <a href="tel:8271602035"><p>8271602035</p></a>
+        </div>
+        <div class="card">
+            <i class="card-icon fa fa-map-marker"></i>
+            <a href="https://goo.gl/maps/3bbuDwvB6kMZrrud8" target="_blank"><p>NIT Jamshedpur</p></a>
+        </div>
+        <div class="card">
+            <i class="card-icon fa fa-instagram"></i>
+            <a href="http://www.instagram.com/mustafizkaifee" target="_blank"><p>mustafizkaifee</p></a>
+        </div>
+        <div class="card">
+            <i class="card-icon fa fa-twitter"></i>
+            <a href="http://" target="_blank"><p>Mustafiz</p></a>
+        </div>
+        <div class="card">
+            <i class="card-icon fa fa-twitter"></i>
+            <a href="http://" target="_blank"><p>Mustafiz</p></a>
+        </div>
+    </div>
+
+
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.6862437224468!2d86.14192731446593!3d22.
+            777022331177264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e4daa475a5cd%3A0xd87b53fadcd771a1!2s
+            National%20Institute%20of%20Technology%2C%20Jamshedpur!5e0!3m2!1sen!2sin!4v1586704282260!5m2!1sen!2sin" 
+            width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+
+
+    <div class="page-content-2">
+        <div class="heading" id="heading">
+            Send me a Message!!
+        </div>
+    </div>
+
+    
+    <div class="contact-info-form">
+        <form action="/contact" method="post">
+            <div class="form-group">
+                <label for="">Name: </label>
+                <input class="form-control" type="text" placeholder="Name" name="name" id="">
+            </div>
+            <div class="form-group">
+                <label for="">Email id: </label>
+                <input class="form-control" type="email" placeholder="Email id" name="email" id="">
+            </div>
+            <div class="form-group">
+                <label for="">Message: </label>
+                <textarea class="form-control" placeholder="Message.." name="message" id="" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn-lg bt-default btn-block"><i class="fa fa-send"></i> Submit !</button>
+            </div>
+        </form>
+    </div>
+
+    
+
+</div>
+    
+
+
+<%- include('../partials/footer') %>

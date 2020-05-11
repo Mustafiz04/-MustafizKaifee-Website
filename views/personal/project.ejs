@@ -1,0 +1,27 @@
+<%- include('../partials/header') %>
+
+    <div class="layout" id='lay'>
+        <div class="page-content-2">
+            <div class="heading" id="heading">
+                My projects
+            </div>
+        </div>
+
+
+        <div class="project">
+            <% projects.forEach(function(project){ %>
+                <article>
+                    <img src="/images/<%= project.photoname %>" alt="">
+                    <div class="p-card">
+                        <p><%= project.descriptions %></p>
+                        <a href="<%= project.links %>" target="_blank">View Project</a>
+                    </div>
+                </article>
+            <% }) %>
+
+        </div>
+    </div>
+    
+
+
+<%- include('../partials/footer') %>

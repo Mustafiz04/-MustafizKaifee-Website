@@ -1,0 +1,204 @@
+@media (max-width : 1250px){
+    .page-content{
+        max-width: 50%;
+        font-size: 1.8rem;
+    }
+
+    .contact-info .card p{
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width : 1250px){
+    .page-content{
+        max-width: 50%;
+        font-size: 1.8rem;
+    }
+    .page-content-3{
+        margin: 0;
+    }
+
+    .contact-info .card p{
+        font-size: 15px;
+    }
+    .layout .contact-info{
+        grid-template-columns: repeat(2, 300px);
+    }
+    .layout .content{
+        grid-template-columns: repeat(2,350px);
+    }
+}
+
+@media (max-width : 952px){
+    label.logo{
+        padding-left: 50px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+    .layout{
+        margin: 0 50px;
+    }
+    .page-content{
+        max-width: 50%;
+        font-size: 2rem;
+    }
+    .layout .project,.layout .contact-info{
+        grid-template-columns: repeat(1, 300px);
+    }
+}
+@media (max-width : 858px){
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 999;
+    }
+    nav ul li{
+        display: block;
+        margin: 35px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .page-content{
+        max-width: 100%;
+        font-size: 2rem;
+    }
+    .social-media{
+        width: 100%;
+    }
+    .layout .page-content-2 .heading{
+        font-size: 50px;
+    }
+
+
+
+    .layout .content{
+        grid-template-columns: repeat(1,350px);
+    }
+    .copyright p{
+        font-size: 15px;
+    }
+    .blog .blog-container{
+        flex-direction: column;
+    }
+    .blog .blog-container .blog-img{
+        margin: 0px;
+        width: 100%;
+    }
+    .blog .blog-container .blog-content{
+        width: 100%;
+        text-align: center;
+    }
+    .full-blog .full-blog-container .title-image img{
+        width: 80%;
+    }
+    .full-blog .full-blog-container .full-blog-content{
+        width: 80%;
+    }
+    .blogcontent{
+        width: 100% !important ; 
+    }
+    .blogcontent .blogmaincontent{
+        width: 100%;
+    }
+    .blogcontent .sidebar{
+        width: 100%;
+        padding: 0px 15px;
+    }
+    .blogcontent .sidebar .search{
+        margin-top: 30px;
+    }
+    /* footer{
+        height: 600px;
+    }
+    footer .footer-content{
+        height: auto;
+        flex-direction: column;
+    }
+    footer .footer-content .contact-form{
+        padding-bottom: 100px;
+    }
+    footer .footer-content .contact-form .text-input{
+        width: 100%;
+    }
+    footer .footer-content .contact-form .btn{
+        width: 100%;
+    } */
+    .blogcontent .blogmaincontent.single{
+        margin: 10px;
+    }
+    .layout .contact-info-form{
+        width: 90%;
+    }
+    .layout .map{
+        width: 90%;
+        height: 400px;
+    }
+}
+
+@media (max-width : 540px){
+    .full-blog .full-blog-container .title-image img{
+        width: 100%;
+        height: 400px;
+    }
+    .full-blog .full-blog-container .full-blog-content{
+        width: 100%;
+    }
+}
+
+/* Contact */
+
+@media (max-width : 1100px){
+    /* .contact-info{
+
+    } */
+    .contact-info .card{
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+    .contact-info .card p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width : 660px){
+    .blogcontent .blogmaincontent .post{
+        height: auto;
+    }
+    .blogcontent .blogmaincontent .post .post-image{
+        width: 100%;
+    }
+    .blogcontent .blogmaincontent .post .post-review{
+        width: 100%;
+    }
+    .blogcontent .blogmaincontent .post .post-review .read-more{
+        position: static;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .layout .contact-info-form{
+        width: 100%;
+    }
+    .layout .map{
+        width: 100%;
+        height: 300px;
+    }
+}

@@ -1,0 +1,58 @@
+<%- include('../partials/header') %>
+
+<!-- <div class="layout" id='lay'>
+    <div class="page-content-2">
+        <div class="heading" id="heading">
+            <%= blogs.title  %>
+        </div>
+    </div>
+</div> -->
+
+<!-- <div class="full-blog">
+    <div class="full-blog-container">
+        <div class="title-image">
+            <img src="<%= blogs.image  %>" alt="<%= blogs.title  %> image">
+        </div>
+
+        <div class="full-blog-content">
+            <p><%= blogs.discription  %></p>
+        </div>
+
+        <div class="author">
+            <h2><%= blogs.author  %></h2>
+        </div>
+    </div>
+</div> -->
+
+<div class="blogcontent clearfix">
+    <div class="blogmaincontent single">
+        <h1 class="post-title"><%= blogs.title  %></h1>
+        <p><%= blogs.created.toDateString()%> |  <a href=""> <%= blogs.tag%></a></p>
+        <div class="singlepost-content">
+            <div class="title-image">
+                <img src="<%= blogs.image  %>" alt="<%= blogs.title  %> image">
+            </div>
+            <p><%= blogs.discription  %></p>
+        </div>
+
+        <!-- <div class="post-author">
+
+        </div> -->
+
+    </div>
+
+    <div class="sidebar single">
+        <div class="section topics">
+            <h2 class="section-title">Topics</h2>
+            <ul>
+                <li><a href="">CSS</a></li>
+                <li><a href="">HTML</a></li>
+                <li><a href="">Machine Learning</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<%- include('../partials/footer') %>

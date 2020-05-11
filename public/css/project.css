@@ -1,0 +1,52 @@
+.project{
+    margin: 50px 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    grid-row-gap: 50px;
+    grid-column-gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+article{
+    background-color: #2f3542;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+}
+article:hover{
+    transform: translateY(-5px);
+}
+
+article img{
+    width: 100%;
+    height: 175px;
+}
+
+.p-card{
+    padding: 0 20px 20px;
+}
+
+.p-card p{
+    font-size: 1.2rem;
+}
+
+.p-card a{
+    font-size: 15px;
+    padding: 10px 10px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #ff6348;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: 600;
+}
+
+.p-card a:hover{
+    transform: scale(1.1);
+    color: #ff6348;
+    background-color: white;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.5);
+    transition: all .5s ease-out 0s;
+}

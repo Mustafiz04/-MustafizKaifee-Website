@@ -1,0 +1,78 @@
+<%- include('../partials/header')  %>
+
+<div class="layout" id='lay'>
+    <div class="page-content-2">
+        <div class="heading" id="heading">
+            Blog Post
+        </div>
+    </div>
+
+
+    <!-- <div class="blog">
+        <% blogs.forEach(function(blogs){ %>
+            <div class="blog-container">
+                <div class="blog-img">
+                    <img src="<%= blogs.image%> " alt="">
+                </div>
+                <div class="blog-content">
+                    <h1><%= blogs.title%></h4>
+                    <ul>
+                        <li><i class="fa fa-calendar"></i> <%= blogs.created.toDateString()%></li>
+                        <li><i class="fa fa-folder"></i> <%= blogs.tag%></li>
+                        <li><i class="fa fa-user"></i> <%= blogs.author%></li>
+                    </ul>
+                    <p><%= blogs.discription.substring(0,200)%>... </p>
+                    <a href="/blog/r/<%= blogs._id%>">Read More > </a>
+                </div>
+            </div>
+        <%  }) %>
+    </div> -->
+</div>
+
+<div class="blogcontent clearfix">
+    <div class="blogmaincontent">
+        <h1 class="recent-post-title">Recent Posts</h1>
+        
+        <% blogs.forEach(function(blogs){ %>
+            <div class="post clearfix">
+                <img src="<%= blogs.image%>" alt="" class="post-image">
+                <div class="post-review">
+                    <h2><a href=""><%= blogs.title%></a></h2>
+                    <i class="fa fa-user"> <%= blogs.author%></i>
+                    &nbsp
+                    <i class="fa fa-calendar"> <%= blogs.created.toDateString()%></i>
+                    &nbsp
+                    <i class="fa fa-folder"> <%= blogs.tag%></i>
+                    <p class="preview-text">
+                        <%= blogs.discription.substring(0,200)%>...
+                    </p>
+                    <a href="/blog/r/<%= blogs._id%>" class="btn read-more">Read More</a>
+                </div>
+            </div>
+        <% }) %>
+
+    </div>
+
+    <div class="sidebar">
+        <div class="section search">
+            <h2 class="section-title">Search</h2>
+            <form action="" method="post">
+                <input type="text" name="search-item" class="text-input" placeholder="Search..">
+            </form>
+        </div>
+
+        <div class="section topics">
+            <h2 class="section-title">Topics</h2>
+            <ul>
+                <li><a href="">CSS</a></li>
+                <li><a href="">HTML</a></li>
+                <li><a href="">Machine Learning</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+<%- include('../partials/footer')  %>

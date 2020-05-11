@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/mk-.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/9f47f376f1.js"></script>
+
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/project.css">
+    <link rel="stylesheet" href="/css/skill.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <title><%= title %></title>
+</head>
+<body onload="loader()">
+
+    <div id="loader"></div>
+
+    <nav id="mynav">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn" id="dash">
+            <i class="fa fa-bars"></i>
+        </label>
+        <label for=" " class="logo" >
+            <a href="/"><img src="/images/mk-.png" alt="moon" id="moon" ></a>
+        </label>
+        <ul id="m">
+            <li ><a href="/" id="list">HOME</a></li>
+            <!-- <li ><a href="/blog" id="list">BLOG</a></li> -->
+            <li ><a href="/skill" id="list">Skills</a></li>
+            <li ><a href="/project" id="list">Projects</a></li>
+            <li ><a href="/contact" id="list">CONTACT</a></li>
+            <!-- <% if( !currentUser ){ %>
+                <li ><a href="/register" id="list">Sign Up</a></li>
+                <li ><a href="/login" id="list">Sign in</a></li>
+            <% }else{ %>
+                <li ><a href="/logout" id="list">logout</a></li>
+                <li class="fa fa-user"> <a href=""><%= currentUser.username  %></a></li>
+            <% } %> -->
+        </ul>
+    </nav>
