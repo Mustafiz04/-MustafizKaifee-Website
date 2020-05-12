@@ -13,8 +13,10 @@ var blogRoutes = require('./routes/blog');
 var contactRoutes = require('./routes/contact');
 var authRoutes = require('./routes/auth');
 
+mongodb+srv://Mustafiz04:Pgagpta@04@mustafizkaifee-tmlge.mongodb.net/test?retryWrites=true&w=majority;
 
-mongoose.connect('mongodb://localhost/blog', {useNewUrlParser: true,useUnifiedTopology: true}).then(() => {
+const url = process.env.MONGODB_URL || 'mongodb://localhost/blog';
+mongoose.connect(url, {useNewUrlParser: true,useUnifiedTopology: true}).then(() => {
     console.log("Connected to Database");
     }).catch((err) => {
         console.log("Not Connected to Database ERROR! ", err);
