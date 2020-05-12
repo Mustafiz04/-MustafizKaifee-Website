@@ -11,14 +11,14 @@ router.get('/', (req, res) => {
 
 router.get('/project', (req,res) => {
     res.locals.title = "Mustafiz's projects"; 
-    Project.find({}, (err, allProjects) => {
-        if(err){
-            console.log(err);
-        }else{
-            res.render('personal/project', {projects : allProjects});
-        }
-    })
-    
+    // Project.find({}, (err, allProjects) => {
+    //     if(err){
+    //         console.log(err);
+    //     }else{
+    //         res.render('personal/project', {projects : allProjects});
+    //     }
+    // })
+    res.render('personal/project');
 })
 
 
