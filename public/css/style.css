@@ -171,7 +171,7 @@ p{
 
 #cv{
     padding: 5px 7px;
-    margin-left: 95px;
+    margin-left: 40px;
     background: transparent;
     /* background-image: linear-gradient(rgb(2, 12, 27) 200px, rgb(10, 25, 47) 550px, rgb(10, 25, 47) calc(100% - 550px), rgb(2, 12, 27) calc(100% - 200px)); */
     border: 1px solid rgb(136, 146, 176);
