@@ -21,6 +21,11 @@ router.get('/project', (req,res) => {
     res.render('personal/project');
 })
 
+router.get('/resume', (req, res) => {
+    res.locals.title = "Mustafiz's Resume"
+    res.render("personal/resume");
+})
+
 
 router.get('/skill', (req,res) => {
     res.locals.title = "Mustafiz's skills"; 
