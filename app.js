@@ -16,8 +16,6 @@ var authRoutes = require('./routes/auth');
 mongoose.Promise = global.Promise;
 require('dotenv').config();
 
-// const mlabDB = process.env.MONGODB_URL ? `mongodb+srv://Mustafiz04:Pgagpta@04@mustafizkaifee-tmlge.mongodb.net/test?retryWrites=true&w=majority` : ``;
-
 mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/blog', {useNewUrlParser: true,useUnifiedTopology: true}).then(() => {
     console.log("Connected to Database");
     }).catch((err) => {
