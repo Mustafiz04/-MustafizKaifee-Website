@@ -16,7 +16,8 @@ var authRoutes = require('./routes/auth');
 mongoose.Promise = global.Promise;
 require('dotenv').config();
 
-mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/blog', {useNewUrlParser: true,useUnifiedTopology: true}).then(() => {
+const url = process.env.MONGODB_URL || 'mongodb://localhost/blog';
+mongoose.connect(url, {useNewUrlParser: true,useUnifiedTopology: true}).then(() => {
     console.log("Connected to Database");
     }).catch((err) => {
         console.log("Not Connected to Database ERROR! ", err);
