@@ -100,7 +100,7 @@ nav ul li a:hover{
     transition: all 1s ease-out 0s;
 }
 .page-content{
-    max-width: 40%;
+    max-width: 50%;
     font-size: 2rem;
 }
 .page-content-2{
@@ -109,6 +109,7 @@ nav ul li a:hover{
     font-size: 2rem;
 }
 .heading-f{
+    margin: 20px 0;
     font-size: 3rem;
     font-weight: 600;
     letter-spacing: 1px;
@@ -135,7 +136,17 @@ p{
     margin-inline-end: 0px;
 }
 .about{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+}
+
+#o{
+    color: #FF9933;
+}
+#w{
+    color: #FFFFFF;
+}
+#g{
+    color: #138808;
 }
 
 .social-media{
@@ -310,11 +321,11 @@ footer{
     z-index: 99;
     border: none;
     outline: none;
-    background-color: #00a8ff;
+    background-color: rgba(136, 146, 176,0.1);
     color: white;
     cursor: pointer;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 50%;
 }
 
 #mybtn:hover{
